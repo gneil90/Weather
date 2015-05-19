@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F5363807ACAF99C1116707 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E0BDDDA94F74B98ADC1F6FC6 /* UIImageView+AFNetworking.h */; };
+		025EB3820C687D94C96721D3 /* Pods-Weather-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99EA97B28720CDFA623149 /* Pods-Weather-AFNetworking-dummy.m */; };
+		0B7DEB67F47588B0E3299F89 /* Pods-Weather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0ED749601D002A4B8998A0 /* Pods-Weather-dummy.m */; };
+		150C9BD02DCF9A3564E98D76 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2E733FB02467B3F71FB3A /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		19DA68EF69CB8F0D480DF540 /* TSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F870BC7090DEE7CE27FD7 /* TSBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1B82B75B59473EE188A92184 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D3A9F11B3FD11D3438AA4 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1D603C505EF8448C0958C202 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D0B5CD54FF61633366AB62 /* SystemConfiguration.framework */; };
+		207E6CEF93707E493B7743E0 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD099A38A848A956BFC928A /* TSMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2306FDA1BF961AF8D316E574 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CF071E6D07CDAFEA2735E9 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39612DC1977F327364DC99A2 /* TSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 689C6573847432C6D9CC9EC1 /* TSMessage.h */; };
+		4934F8B4C187F870A499CE1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B97F3C78F665F5E4FA04 /* Foundation.framework */; };
+		56A20C3703C57B316EC7CEE4 /* TSBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA771721BBB8B0DF126C9E /* TSBlurView.h */; };
+		66A058D388E7FD13C2217097 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B86347F113B20E694EA744 /* AFJSONRequestOperation.h */; };
+		6B5162037B0FB669FD60BD41 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836A67FAE9FF19910ABB6ED /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7260B2DEFD6F7274513FADBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B97F3C78F665F5E4FA04 /* Foundation.framework */; };
+		74BD3199104604AB3FF23F93 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F2DB208DEE787329EEC072 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		784327CF4238216297539C12 /* Pods-Weather-TSMessages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A5C39D0F8F9C7E00401736 /* Pods-Weather-TSMessages-dummy.m */; };
+		7CFFD550D7CF30E8ADFB16DA /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1278A63FA5FC67DACE631E /* TSMessageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7EB405FAEDDDFBD3C6DDB1EE /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB92BD812627D29B1600BBD3 /* HexColor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8095561CE611C80A810AC7E5 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE92FC0180974C13E41DF348 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8B89BBDA118A3A4DAF612B47 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 39187DBF339127BD584DBC0A /* AFXMLRequestOperation.h */; };
+		9A6CBD68E2AE98E67747171A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4AC99617A2D54F3AA50671 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9BBDB1FAE571BA588104ACA2 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FDE8AA91FD65D40A927057B /* AFNetworking.h */; };
+		A752B09FA6B6A425C938946E /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 98437BDB1522910D67B7AA8F /* AFPropertyListRequestOperation.h */; };
+		AA4995B1ACA0E337EFE8B579 /* Pods-Weather-OpenWeatherMapAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE065A0C4B1D86121873F50 /* Pods-Weather-OpenWeatherMapAPI-dummy.m */; };
+		ACA6F2E73F36A2AE5A663A1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1B2C4755EB012D676CF1F5 /* Security.framework */; };
+		AED5B04962E18286D9C6358D /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F15D36509ED90C40D3799B53 /* AFNetworkActivityIndicatorManager.h */; };
+		B311DFD028B62A64CC3E5C54 /* TSMessageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 71956921C11CA212915AAF5D /* TSMessageView.h */; };
+		CA3FB7EBFE8705ECB82CF8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B97F3C78F665F5E4FA04 /* Foundation.framework */; };
+		CB687C507856811A12C07A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B97F3C78F665F5E4FA04 /* Foundation.framework */; };
+		CE2F229210C57F949F9252D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B5EDE880E0D7DF636D300A /* CoreGraphics.framework */; };
+		D0F5919A0054DC66BD1AA898 /* Pods-Weather-HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C33FA90DDDC0A59E6E0C644A /* Pods-Weather-HexColors-dummy.m */; };
+		D38F13583A699E1B628928C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B97F3C78F665F5E4FA04 /* Foundation.framework */; };
+		D9C4C43C01804F31228F1358 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 33429F52B97812B967CB95CF /* AFHTTPClient.h */; };
+		E2D536A8CF756A19B8B40C72 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBEB84C290A7F83488470C5 /* MobileCoreServices.framework */; };
+		E6FA73DE93EF2F9270623870 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E68F1253693890515AF19109 /* AFURLConnectionOperation.h */; };
+		E830CBA74ABB4FC100D30148 /* HexColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4770F4944EEE41853F9D3C0F /* HexColor.h */; };
+		EF9AE36F185A3E6452B99B1D /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 920BF3B0E6902FBFF648850C /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F000BC289A0C8C48343DD1C1 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F03D360CF3EE7E5112FFFCA6 /* AFImageRequestOperation.h */; };
+		F659491E31EA2030161EAC7D /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EC3DA6C76F2C8B13C18973 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FC2C69DFBB1D90C63FACF988 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A1637A233C80EBFC30DDDC /* AFHTTPRequestOperation.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F67433A1BB9D84765F80FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616718145B161419A82A17C1;
+			remoteInfo = "Pods-Weather-AFNetworking";
+		};
+		2FD6563603EA259C2D52AB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32658CC75C650EE62551A4D;
+			remoteInfo = "Pods-Weather-HexColors";
+		};
+		391D409534618008546C07DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32658CC75C650EE62551A4D;
+			remoteInfo = "Pods-Weather-HexColors";
+		};
+		403D7DCF1A3468A27873D26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DF3F4B6E30AEA0354FB295;
+			remoteInfo = "Pods-Weather-OpenWeatherMapAPI";
+		};
+		612134EB157ECA230EAD4685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616718145B161419A82A17C1;
+			remoteInfo = "Pods-Weather-AFNetworking";
+		};
+		824E7C7F0559DCD36BE3E614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E851B347D66818B4EA5CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6012BA71209D612578797B32;
+			remoteInfo = "Pods-Weather-TSMessages";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056F2F9C10610BF44B1F57CC /* libPods-Weather-OpenWeatherMapAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather-OpenWeatherMapAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		084D4D5AA7395A671A9ACD14 /* NotificationBackgroundSuccessIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundSuccessIcon.png; path = Pod/Assets/NotificationBackgroundSuccessIcon.png; sourceTree = "<group>"; };
+		0B9317B455E139839AAC9A09 /* Pods-Weather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Weather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FDE8AA91FD65D40A927057B /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		16B444E24A8623ACD5C897B7 /* Pods-Weather-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weather-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		1836A67FAE9FF19910ABB6ED /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		1CCCEA847560CC2F9011BFFB /* NotificationBackgroundMessage.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundMessage.png; path = Pod/Assets/NotificationBackgroundMessage.png; sourceTree = "<group>"; };
+		20068A777C7F19093ACFA08D /* NotificationBackgroundErrorIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundErrorIcon@2x.png"; path = "Pod/Assets/NotificationBackgroundErrorIcon@2x.png"; sourceTree = "<group>"; };
+		270F870BC7090DEE7CE27FD7 /* TSBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSBlurView.m; path = Pod/Classes/TSBlurView.m; sourceTree = "<group>"; };
+		30D789F8E5F78BF3BEC17ECF /* NotificationButtonBackground.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationButtonBackground.png; path = Pod/Assets/NotificationButtonBackground.png; sourceTree = "<group>"; };
+		33429F52B97812B967CB95CF /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		361D969D589617731D011D10 /* NotificationBackgroundSuccess.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundSuccess.png; path = Pod/Assets/NotificationBackgroundSuccess.png; sourceTree = "<group>"; };
+		38B86347F113B20E694EA744 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		39187DBF339127BD584DBC0A /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		3A35B5CBE447FEF6BC920D81 /* Pods-Weather-TSMessages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-TSMessages.xcconfig"; sourceTree = "<group>"; };
+		3B2D4A3D32653F9C8982278A /* NotificationBackgroundMessage@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundMessage@2x.png"; path = "Pod/Assets/NotificationBackgroundMessage@2x.png"; sourceTree = "<group>"; };
+		3C1278A63FA5FC67DACE631E /* TSMessageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSMessageView.m; path = Pod/Classes/TSMessageView.m; sourceTree = "<group>"; };
+		40D0B5CD54FF61633366AB62 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4770F4944EEE41853F9D3C0F /* HexColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColor.h; path = Classes/HexColor.h; sourceTree = "<group>"; };
+		4775BB542F6ABA4EC055D4EF /* Pods-Weather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Weather-resources.sh"; sourceTree = "<group>"; };
+		4896C22E8F16C2BE68A755EA /* NotificationBackgroundWarning.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundWarning.png; path = Pod/Assets/NotificationBackgroundWarning.png; sourceTree = "<group>"; };
+		5104E6593A7077B09559C57E /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		54989A1AE5BA1F6C8BF11B50 /* NotificationBackgroundWarningIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundWarningIcon.png; path = Pod/Assets/NotificationBackgroundWarningIcon.png; sourceTree = "<group>"; };
+		689C6573847432C6D9CC9EC1 /* TSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSMessage.h; path = Pod/Classes/TSMessage.h; sourceTree = "<group>"; };
+		69CF071E6D07CDAFEA2735E9 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		69FA771721BBB8B0DF126C9E /* TSBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSBlurView.h; path = Pod/Classes/TSBlurView.h; sourceTree = "<group>"; };
+		6A6D3A9F11B3FD11D3438AA4 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		6CB75727FC15D516245B6BE3 /* Pods-Weather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Weather-acknowledgements.plist"; sourceTree = "<group>"; };
+		71956921C11CA212915AAF5D /* TSMessageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSMessageView.h; path = Pod/Classes/TSMessageView.h; sourceTree = "<group>"; };
+		7829CAF324E751CC63EB31F3 /* libPods-Weather-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F2DB208DEE787329EEC072 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		8FBEB84C290A7F83488470C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8FE082EAE6649C81BD40E732 /* Pods-Weather-TSMessages-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-TSMessages-Private.xcconfig"; sourceTree = "<group>"; };
+		920BF3B0E6902FBFF648850C /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		933708A9AC9A5C7BA199D9B2 /* NotificationBackgroundSuccessIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundSuccessIcon@2x.png"; path = "Pod/Assets/NotificationBackgroundSuccessIcon@2x.png"; sourceTree = "<group>"; };
+		935660707246D09293923A7E /* Pods-Weather-HexColors-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-HexColors-Private.xcconfig"; sourceTree = "<group>"; };
+		96B5EDE880E0D7DF636D300A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		97A1637A233C80EBFC30DDDC /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		97EC3DA6C76F2C8B13C18973 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		98437BDB1522910D67B7AA8F /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		997C32F6E8BD65A185833051 /* NotificationBackgroundError@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundError@2x.png"; path = "Pod/Assets/NotificationBackgroundError@2x.png"; sourceTree = "<group>"; };
+		9B45B97F3C78F665F5E4FA04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C83A0B62EB896684F5E9F75 /* NotificationBackgroundError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundError.png; path = Pod/Assets/NotificationBackgroundError.png; sourceTree = "<group>"; };
+		A5E6BBF0DE880CA996008584 /* Pods-Weather-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		A614A92EA11F6977CAF25938 /* Pods-Weather-TSMessages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weather-TSMessages-prefix.pch"; sourceTree = "<group>"; };
+		AB92BD812627D29B1600BBD3 /* HexColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColor.m; path = Classes/HexColor.m; sourceTree = "<group>"; };
+		AB99EA97B28720CDFA623149 /* Pods-Weather-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weather-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		ABB6CE7C7E516E0F5505978A /* Pods-Weather-OpenWeatherMapAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weather-OpenWeatherMapAPI-prefix.pch"; sourceTree = "<group>"; };
+		ADE065A0C4B1D86121873F50 /* Pods-Weather-OpenWeatherMapAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weather-OpenWeatherMapAPI-dummy.m"; sourceTree = "<group>"; };
+		AF0ED749601D002A4B8998A0 /* Pods-Weather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weather-dummy.m"; sourceTree = "<group>"; };
+		B14657CF3502F8901E2C9D56 /* Pods-Weather-OpenWeatherMapAPI-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-OpenWeatherMapAPI-Private.xcconfig"; sourceTree = "<group>"; };
+		B22193D0EB3B045F85068788 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
+		B4277441CDE026BC84394ACC /* libPods-Weather-HexColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather-HexColors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49AC3ED20B830759B65F06A /* Pods-Weather-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weather-environment.h"; sourceTree = "<group>"; };
+		B66D798B6EF62224F67A8A16 /* Pods-Weather-OpenWeatherMapAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-OpenWeatherMapAPI.xcconfig"; sourceTree = "<group>"; };
+		B8FF19CAA6EC7C4FB7C240E7 /* Pods-Weather-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		BC4AC99617A2D54F3AA50671 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BD60D2B5FE6EF40C9BF886DB /* NotificationBackgroundWarningIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundWarningIcon@2x.png"; path = "Pod/Assets/NotificationBackgroundWarningIcon@2x.png"; sourceTree = "<group>"; };
+		C070F3BCFDC62C4E23CCFF05 /* NotificationBackgroundWarning@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundWarning@2x.png"; path = "Pod/Assets/NotificationBackgroundWarning@2x.png"; sourceTree = "<group>"; };
+		C33FA90DDDC0A59E6E0C644A /* Pods-Weather-HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weather-HexColors-dummy.m"; sourceTree = "<group>"; };
+		C3BD1292619D1A1CFD2C60D9 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57018C48DDC53EE08E49E6D /* NotificationBackgroundErrorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NotificationBackgroundErrorIcon.png; path = Pod/Assets/NotificationBackgroundErrorIcon.png; sourceTree = "<group>"; };
+		C6A5C39D0F8F9C7E00401736 /* Pods-Weather-TSMessages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Weather-TSMessages-dummy.m"; sourceTree = "<group>"; };
+		CD5F6C2700C63AAC891C5B4C /* NotificationButtonBackground@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationButtonBackground@2x.png"; path = "Pod/Assets/NotificationButtonBackground@2x.png"; sourceTree = "<group>"; };
+		CFD099A38A848A956BFC928A /* TSMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSMessage.m; path = Pod/Classes/TSMessage.m; sourceTree = "<group>"; };
+		D430B958AB8262384BFABDB5 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = TSMessagesDefaultDesign.json; path = Pod/Assets/TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		DE92FC0180974C13E41DF348 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		E0BDDDA94F74B98ADC1F6FC6 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		E68F1253693890515AF19109 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		EA5CC1AD223F041EF20FA62E /* libPods-Weather-TSMessages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather-TSMessages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1B2C4755EB012D676CF1F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F03D360CF3EE7E5112FFFCA6 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		F15D36509ED90C40D3799B53 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		F26A4BD54C0B1A19878E770B /* NotificationBackgroundSuccess@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NotificationBackgroundSuccess@2x.png"; path = "Pod/Assets/NotificationBackgroundSuccess@2x.png"; sourceTree = "<group>"; };
+		F4870690D5CFF16B76F9F304 /* Pods-Weather-HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Weather-HexColors-prefix.pch"; sourceTree = "<group>"; };
+		F743F1FAC269A83E73CD838C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9E2E733FB02467B3F71FB3A /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
+		FA20181B9698221A834841B7 /* Pods-Weather-HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Weather-HexColors.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD73520A1CCCBCB3A835E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3FB7EBFE8705ECB82CF8CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6C60CE185EDA45E8194DA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7260B2DEFD6F7274513FADBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22F94626E011C3ABE1E7C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2F229210C57F949F9252D5 /* CoreGraphics.framework in Frameworks */,
+				CB687C507856811A12C07A6E /* Foundation.framework in Frameworks */,
+				E2D536A8CF756A19B8B40C72 /* MobileCoreServices.framework in Frameworks */,
+				ACA6F2E73F36A2AE5A663A1F /* Security.framework in Frameworks */,
+				1D603C505EF8448C0958C202 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7D26CC3DA2296449130A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4934F8B4C187F870A499CE1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF331A930340798E24098095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38F13583A699E1B628928C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045BBBA0404D657222A779E1 /* TSMessages */ = {
+			isa = PBXGroup;
+			children = (
+				69FA771721BBB8B0DF126C9E /* TSBlurView.h */,
+				270F870BC7090DEE7CE27FD7 /* TSBlurView.m */,
+				689C6573847432C6D9CC9EC1 /* TSMessage.h */,
+				CFD099A38A848A956BFC928A /* TSMessage.m */,
+				71956921C11CA212915AAF5D /* TSMessageView.h */,
+				3C1278A63FA5FC67DACE631E /* TSMessageView.m */,
+				27CFE0BF593536EBA507EFAE /* Resources */,
+				086870CAB99093EBFEE0759D /* Support Files */,
+			);
+			path = TSMessages;
+			sourceTree = "<group>";
+		};
+		0504A77D66EB5255D7247A45 = {
+			isa = PBXGroup;
+			children = (
+				F743F1FAC269A83E73CD838C /* Podfile */,
+				EB6D278F8FFC8219058B10DD /* Frameworks */,
+				B5DD6AFD0E63A3255430C4FD /* Pods */,
+				BA2F6E4718446C963AE0043A /* Products */,
+				0912C328FD025C477DCED0DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		086870CAB99093EBFEE0759D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A35B5CBE447FEF6BC920D81 /* Pods-Weather-TSMessages.xcconfig */,
+				8FE082EAE6649C81BD40E732 /* Pods-Weather-TSMessages-Private.xcconfig */,
+				C6A5C39D0F8F9C7E00401736 /* Pods-Weather-TSMessages-dummy.m */,
+				A614A92EA11F6977CAF25938 /* Pods-Weather-TSMessages-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Weather-TSMessages";
+			sourceTree = "<group>";
+		};
+		0912C328FD025C477DCED0DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CB745A0D3628168AC1A24CF /* Pods-Weather */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		171C677C03C534BE162B340D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				33429F52B97812B967CB95CF /* AFHTTPClient.h */,
+				F9E2E733FB02467B3F71FB3A /* AFHTTPClient.m */,
+				97A1637A233C80EBFC30DDDC /* AFHTTPRequestOperation.h */,
+				1836A67FAE9FF19910ABB6ED /* AFHTTPRequestOperation.m */,
+				F03D360CF3EE7E5112FFFCA6 /* AFImageRequestOperation.h */,
+				69CF071E6D07CDAFEA2735E9 /* AFImageRequestOperation.m */,
+				38B86347F113B20E694EA744 /* AFJSONRequestOperation.h */,
+				97EC3DA6C76F2C8B13C18973 /* AFJSONRequestOperation.m */,
+				F15D36509ED90C40D3799B53 /* AFNetworkActivityIndicatorManager.h */,
+				6A6D3A9F11B3FD11D3438AA4 /* AFNetworkActivityIndicatorManager.m */,
+				0FDE8AA91FD65D40A927057B /* AFNetworking.h */,
+				98437BDB1522910D67B7AA8F /* AFPropertyListRequestOperation.h */,
+				DE92FC0180974C13E41DF348 /* AFPropertyListRequestOperation.m */,
+				E68F1253693890515AF19109 /* AFURLConnectionOperation.h */,
+				BC4AC99617A2D54F3AA50671 /* AFURLConnectionOperation.m */,
+				39187DBF339127BD584DBC0A /* AFXMLRequestOperation.h */,
+				920BF3B0E6902FBFF648850C /* AFXMLRequestOperation.m */,
+				E0BDDDA94F74B98ADC1F6FC6 /* UIImageView+AFNetworking.h */,
+				85F2DB208DEE787329EEC072 /* UIImageView+AFNetworking.m */,
+				F89DD0BB86F9457D7FF842A8 /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1837F8942199380CF929C7CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66D798B6EF62224F67A8A16 /* Pods-Weather-OpenWeatherMapAPI.xcconfig */,
+				B14657CF3502F8901E2C9D56 /* Pods-Weather-OpenWeatherMapAPI-Private.xcconfig */,
+				ADE065A0C4B1D86121873F50 /* Pods-Weather-OpenWeatherMapAPI-dummy.m */,
+				ABB6CE7C7E516E0F5505978A /* Pods-Weather-OpenWeatherMapAPI-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Weather-OpenWeatherMapAPI";
+			sourceTree = "<group>";
+		};
+		27CFE0BF593536EBA507EFAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C83A0B62EB896684F5E9F75 /* NotificationBackgroundError.png */,
+				997C32F6E8BD65A185833051 /* NotificationBackgroundError@2x.png */,
+				C57018C48DDC53EE08E49E6D /* NotificationBackgroundErrorIcon.png */,
+				20068A777C7F19093ACFA08D /* NotificationBackgroundErrorIcon@2x.png */,
+				1CCCEA847560CC2F9011BFFB /* NotificationBackgroundMessage.png */,
+				3B2D4A3D32653F9C8982278A /* NotificationBackgroundMessage@2x.png */,
+				361D969D589617731D011D10 /* NotificationBackgroundSuccess.png */,
+				F26A4BD54C0B1A19878E770B /* NotificationBackgroundSuccess@2x.png */,
+				084D4D5AA7395A671A9ACD14 /* NotificationBackgroundSuccessIcon.png */,
+				933708A9AC9A5C7BA199D9B2 /* NotificationBackgroundSuccessIcon@2x.png */,
+				4896C22E8F16C2BE68A755EA /* NotificationBackgroundWarning.png */,
+				C070F3BCFDC62C4E23CCFF05 /* NotificationBackgroundWarning@2x.png */,
+				54989A1AE5BA1F6C8BF11B50 /* NotificationBackgroundWarningIcon.png */,
+				BD60D2B5FE6EF40C9BF886DB /* NotificationBackgroundWarningIcon@2x.png */,
+				30D789F8E5F78BF3BEC17ECF /* NotificationButtonBackground.png */,
+				CD5F6C2700C63AAC891C5B4C /* NotificationButtonBackground@2x.png */,
+				D430B958AB8262384BFABDB5 /* TSMessagesDefaultDesign.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3CB745A0D3628168AC1A24CF /* Pods-Weather */ = {
+			isa = PBXGroup;
+			children = (
+				0B9317B455E139839AAC9A09 /* Pods-Weather-acknowledgements.markdown */,
+				6CB75727FC15D516245B6BE3 /* Pods-Weather-acknowledgements.plist */,
+				AF0ED749601D002A4B8998A0 /* Pods-Weather-dummy.m */,
+				B49AC3ED20B830759B65F06A /* Pods-Weather-environment.h */,
+				4775BB542F6ABA4EC055D4EF /* Pods-Weather-resources.sh */,
+				5104E6593A7077B09559C57E /* Pods-Weather.debug.xcconfig */,
+				B22193D0EB3B045F85068788 /* Pods-Weather.release.xcconfig */,
+			);
+			name = "Pods-Weather";
+			path = "Target Support Files/Pods-Weather";
+			sourceTree = "<group>";
+		};
+		50282F0C43EE7957988B9A0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA20181B9698221A834841B7 /* Pods-Weather-HexColors.xcconfig */,
+				935660707246D09293923A7E /* Pods-Weather-HexColors-Private.xcconfig */,
+				C33FA90DDDC0A59E6E0C644A /* Pods-Weather-HexColors-dummy.m */,
+				F4870690D5CFF16B76F9F304 /* Pods-Weather-HexColors-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Weather-HexColors";
+			sourceTree = "<group>";
+		};
+		717C4C46D8464F0CA7E87529 /* OpenWeatherMapAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1837F8942199380CF929C7CF /* Support Files */,
+			);
+			path = OpenWeatherMapAPI;
+			sourceTree = "<group>";
+		};
+		9298F1BC677AC5EE0BE83A8A /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				4770F4944EEE41853F9D3C0F /* HexColor.h */,
+				AB92BD812627D29B1600BBD3 /* HexColor.m */,
+				50282F0C43EE7957988B9A0F /* Support Files */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		B5DD6AFD0E63A3255430C4FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				171C677C03C534BE162B340D /* AFNetworking */,
+				9298F1BC677AC5EE0BE83A8A /* HexColors */,
+				717C4C46D8464F0CA7E87529 /* OpenWeatherMapAPI */,
+				045BBBA0404D657222A779E1 /* TSMessages */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA2F6E4718446C963AE0043A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3BD1292619D1A1CFD2C60D9 /* libPods-Weather.a */,
+				7829CAF324E751CC63EB31F3 /* libPods-Weather-AFNetworking.a */,
+				B4277441CDE026BC84394ACC /* libPods-Weather-HexColors.a */,
+				056F2F9C10610BF44B1F57CC /* libPods-Weather-OpenWeatherMapAPI.a */,
+				EA5CC1AD223F041EF20FA62E /* libPods-Weather-TSMessages.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB6D278F8FFC8219058B10DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B9AE497B2FCECF82E0DEF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB8B9AE497B2FCECF82E0DEF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				96B5EDE880E0D7DF636D300A /* CoreGraphics.framework */,
+				9B45B97F3C78F665F5E4FA04 /* Foundation.framework */,
+				8FBEB84C290A7F83488470C5 /* MobileCoreServices.framework */,
+				ED1B2C4755EB012D676CF1F5 /* Security.framework */,
+				40D0B5CD54FF61633366AB62 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F89DD0BB86F9457D7FF842A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6BBF0DE880CA996008584 /* Pods-Weather-AFNetworking.xcconfig */,
+				B8FF19CAA6EC7C4FB7C240E7 /* Pods-Weather-AFNetworking-Private.xcconfig */,
+				AB99EA97B28720CDFA623149 /* Pods-Weather-AFNetworking-dummy.m */,
+				16B444E24A8623ACD5C897B7 /* Pods-Weather-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Weather-AFNetworking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A5409B84F4B17297507112E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A20C3703C57B316EC7CEE4 /* TSBlurView.h in Headers */,
+				39612DC1977F327364DC99A2 /* TSMessage.h in Headers */,
+				B311DFD028B62A64CC3E5C54 /* TSMessageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62DAC2F0315F2BC98BEED55A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C4C43C01804F31228F1358 /* AFHTTPClient.h in Headers */,
+				FC2C69DFBB1D90C63FACF988 /* AFHTTPRequestOperation.h in Headers */,
+				F000BC289A0C8C48343DD1C1 /* AFImageRequestOperation.h in Headers */,
+				66A058D388E7FD13C2217097 /* AFJSONRequestOperation.h in Headers */,
+				AED5B04962E18286D9C6358D /* AFNetworkActivityIndicatorManager.h in Headers */,
+				9BBDB1FAE571BA588104ACA2 /* AFNetworking.h in Headers */,
+				A752B09FA6B6A425C938946E /* AFPropertyListRequestOperation.h in Headers */,
+				E6FA73DE93EF2F9270623870 /* AFURLConnectionOperation.h in Headers */,
+				8B89BBDA118A3A4DAF612B47 /* AFXMLRequestOperation.h in Headers */,
+				01F5363807ACAF99C1116707 /* UIImageView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDB84EA2125B85F8E00C8D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50AF9B21BB6B1F5E567E795 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E830CBA74ABB4FC100D30148 /* HexColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		50DF3F4B6E30AEA0354FB295 /* Pods-Weather-OpenWeatherMapAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAC4722504C38E88CC8CCC0 /* Build configuration list for PBXNativeTarget "Pods-Weather-OpenWeatherMapAPI" */;
+			buildPhases = (
+				112DABA2B16847360700F6A4 /* Sources */,
+				2AD73520A1CCCBCB3A835E3E /* Frameworks */,
+				7CDB84EA2125B85F8E00C8D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6AC11F0B705CBD2D764B911 /* PBXTargetDependency */,
+			);
+			name = "Pods-Weather-OpenWeatherMapAPI";
+			productName = "Pods-Weather-OpenWeatherMapAPI";
+			productReference = 056F2F9C10610BF44B1F57CC /* libPods-Weather-OpenWeatherMapAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6012BA71209D612578797B32 /* Pods-Weather-TSMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B374DB7B40AFF29A750A9B9F /* Build configuration list for PBXNativeTarget "Pods-Weather-TSMessages" */;
+			buildPhases = (
+				8D283399BFB18148E28CB1A9 /* Sources */,
+				AF7D26CC3DA2296449130A0B /* Frameworks */,
+				2A5409B84F4B17297507112E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B395B7EFE3B39268F3A82AD8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Weather-TSMessages";
+			productName = "Pods-Weather-TSMessages";
+			productReference = EA5CC1AD223F041EF20FA62E /* libPods-Weather-TSMessages.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		616718145B161419A82A17C1 /* Pods-Weather-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90723E99E120102FFAE5A4B /* Build configuration list for PBXNativeTarget "Pods-Weather-AFNetworking" */;
+			buildPhases = (
+				5893F13278C92C968FFB8716 /* Sources */,
+				A22F94626E011C3ABE1E7C03 /* Frameworks */,
+				62DAC2F0315F2BC98BEED55A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Weather-AFNetworking";
+			productName = "Pods-Weather-AFNetworking";
+			productReference = 7829CAF324E751CC63EB31F3 /* libPods-Weather-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A32658CC75C650EE62551A4D /* Pods-Weather-HexColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9EB9FF2D42C0F2E0339817B /* Build configuration list for PBXNativeTarget "Pods-Weather-HexColors" */;
+			buildPhases = (
+				84D1EA4AC7FD6B8643142B82 /* Sources */,
+				CF331A930340798E24098095 /* Frameworks */,
+				F50AF9B21BB6B1F5E567E795 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Weather-HexColors";
+			productName = "Pods-Weather-HexColors";
+			productReference = B4277441CDE026BC84394ACC /* libPods-Weather-HexColors.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE68D9ADB46C845DA9F848F0 /* Pods-Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D823D009589269BDA49257 /* Build configuration list for PBXNativeTarget "Pods-Weather" */;
+			buildPhases = (
+				A564DD28BB8C21F1F7931AC1 /* Sources */,
+				9B6C60CE185EDA45E8194DA0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DA64ACF7532A88F3D9D139 /* PBXTargetDependency */,
+				D3E71D10CB47312817C91FAD /* PBXTargetDependency */,
+				E7A473A6533DB93F57FA9786 /* PBXTargetDependency */,
+				ADDD38277F917EE62A8ECF39 /* PBXTargetDependency */,
+			);
+			name = "Pods-Weather";
+			productName = "Pods-Weather";
+			productReference = C3BD1292619D1A1CFD2C60D9 /* libPods-Weather.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E851B347D66818B4EA5CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 3B0DE72EBF5FD4D68666BF9F /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0504A77D66EB5255D7247A45;
+			productRefGroup = BA2F6E4718446C963AE0043A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE68D9ADB46C845DA9F848F0 /* Pods-Weather */,
+				616718145B161419A82A17C1 /* Pods-Weather-AFNetworking */,
+				A32658CC75C650EE62551A4D /* Pods-Weather-HexColors */,
+				50DF3F4B6E30AEA0354FB295 /* Pods-Weather-OpenWeatherMapAPI */,
+				6012BA71209D612578797B32 /* Pods-Weather-TSMessages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		112DABA2B16847360700F6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4995B1ACA0E337EFE8B579 /* Pods-Weather-OpenWeatherMapAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5893F13278C92C968FFB8716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150C9BD02DCF9A3564E98D76 /* AFHTTPClient.m in Sources */,
+				6B5162037B0FB669FD60BD41 /* AFHTTPRequestOperation.m in Sources */,
+				2306FDA1BF961AF8D316E574 /* AFImageRequestOperation.m in Sources */,
+				F659491E31EA2030161EAC7D /* AFJSONRequestOperation.m in Sources */,
+				1B82B75B59473EE188A92184 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				8095561CE611C80A810AC7E5 /* AFPropertyListRequestOperation.m in Sources */,
+				9A6CBD68E2AE98E67747171A /* AFURLConnectionOperation.m in Sources */,
+				EF9AE36F185A3E6452B99B1D /* AFXMLRequestOperation.m in Sources */,
+				025EB3820C687D94C96721D3 /* Pods-Weather-AFNetworking-dummy.m in Sources */,
+				74BD3199104604AB3FF23F93 /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D1EA4AC7FD6B8643142B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB405FAEDDDFBD3C6DDB1EE /* HexColor.m in Sources */,
+				D0F5919A0054DC66BD1AA898 /* Pods-Weather-HexColors-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D283399BFB18148E28CB1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784327CF4238216297539C12 /* Pods-Weather-TSMessages-dummy.m in Sources */,
+				19DA68EF69CB8F0D480DF540 /* TSBlurView.m in Sources */,
+				207E6CEF93707E493B7743E0 /* TSMessage.m in Sources */,
+				7CFFD550D7CF30E8ADFB16DA /* TSMessageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A564DD28BB8C21F1F7931AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7DEB67F47588B0E3299F89 /* Pods-Weather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36DA64ACF7532A88F3D9D139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-AFNetworking";
+			target = 616718145B161419A82A17C1 /* Pods-Weather-AFNetworking */;
+			targetProxy = 612134EB157ECA230EAD4685 /* PBXContainerItemProxy */;
+		};
+		ADDD38277F917EE62A8ECF39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-TSMessages";
+			target = 6012BA71209D612578797B32 /* Pods-Weather-TSMessages */;
+			targetProxy = 824E7C7F0559DCD36BE3E614 /* PBXContainerItemProxy */;
+		};
+		B395B7EFE3B39268F3A82AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-HexColors";
+			target = A32658CC75C650EE62551A4D /* Pods-Weather-HexColors */;
+			targetProxy = 2FD6563603EA259C2D52AB1D /* PBXContainerItemProxy */;
+		};
+		D3E71D10CB47312817C91FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-HexColors";
+			target = A32658CC75C650EE62551A4D /* Pods-Weather-HexColors */;
+			targetProxy = 391D409534618008546C07DF /* PBXContainerItemProxy */;
+		};
+		D6AC11F0B705CBD2D764B911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-AFNetworking";
+			target = 616718145B161419A82A17C1 /* Pods-Weather-AFNetworking */;
+			targetProxy = 1F67433A1BB9D84765F80FC5 /* PBXContainerItemProxy */;
+		};
+		E7A473A6533DB93F57FA9786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Weather-OpenWeatherMapAPI";
+			target = 50DF3F4B6E30AEA0354FB295 /* Pods-Weather-OpenWeatherMapAPI */;
+			targetProxy = 403D7DCF1A3468A27873D26D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		011636073A034B6BF74C9D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE082EAE6649C81BD40E732 /* Pods-Weather-TSMessages-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-TSMessages/Pods-Weather-TSMessages-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		48E648B4E8CBC1295E688E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5104E6593A7077B09559C57E /* Pods-Weather.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		627FEDA87B5A3EC3AC372181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935660707246D09293923A7E /* Pods-Weather-HexColors-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-HexColors/Pods-Weather-HexColors-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		670765DDE863B2F45DE58FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE082EAE6649C81BD40E732 /* Pods-Weather-TSMessages-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-TSMessages/Pods-Weather-TSMessages-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6DCF7B898F907DB68198E5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14657CF3502F8901E2C9D56 /* Pods-Weather-OpenWeatherMapAPI-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-OpenWeatherMapAPI/Pods-Weather-OpenWeatherMapAPI-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		89270194E4806E5B815D0834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14657CF3502F8901E2C9D56 /* Pods-Weather-OpenWeatherMapAPI-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-OpenWeatherMapAPI/Pods-Weather-OpenWeatherMapAPI-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A59F38E75613CBA216421CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FF19CAA6EC7C4FB7C240E7 /* Pods-Weather-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-AFNetworking/Pods-Weather-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B1E82B92B4A425085BF83B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935660707246D09293923A7E /* Pods-Weather-HexColors-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-HexColors/Pods-Weather-HexColors-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD68724FCDF8B0756F6D3418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BEAB85F4BE8EBCFB47D05F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FF19CAA6EC7C4FB7C240E7 /* Pods-Weather-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Weather-AFNetworking/Pods-Weather-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6117EE1AD8894B460EFBCC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22193D0EB3B045F85068788 /* Pods-Weather.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FE3F86DFD105338CF432D7BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B0DE72EBF5FD4D68666BF9F /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD68724FCDF8B0756F6D3418 /* Debug */,
+				FE3F86DFD105338CF432D7BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D823D009589269BDA49257 /* Build configuration list for PBXNativeTarget "Pods-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E648B4E8CBC1295E688E02 /* Debug */,
+				F6117EE1AD8894B460EFBCC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B374DB7B40AFF29A750A9B9F /* Build configuration list for PBXNativeTarget "Pods-Weather-TSMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670765DDE863B2F45DE58FFE /* Debug */,
+				011636073A034B6BF74C9D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9EB9FF2D42C0F2E0339817B /* Build configuration list for PBXNativeTarget "Pods-Weather-HexColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627FEDA87B5A3EC3AC372181 /* Debug */,
+				B1E82B92B4A425085BF83B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAAC4722504C38E88CC8CCC0 /* Build configuration list for PBXNativeTarget "Pods-Weather-OpenWeatherMapAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89270194E4806E5B815D0834 /* Debug */,
+				6DCF7B898F907DB68198E5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90723E99E120102FFAE5A4B /* Build configuration list for PBXNativeTarget "Pods-Weather-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59F38E75613CBA216421CA1 /* Debug */,
+				BEAB85F4BE8EBCFB47D05F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24E851B347D66818B4EA5CBA /* Project object */;
+}
